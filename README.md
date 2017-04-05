@@ -12,7 +12,7 @@ a better way of doing business.
 2. [Usage](#usage)
     * [Initialization](#usage)
     * [Ad showing](#ad-showing)
-    * [Frequnecy capping](#frequnecy-capping)
+    * [Frequency capping](#frequency-capping)
     * [Console logging](#console-logging)
 3. [Requirements](#requirements)
 
@@ -40,7 +40,7 @@ Import to access public API.
 ```
 
 #### Initialization
-Initialization has to be done before Jukko can be customized and launched. The method will need the API. The API key can be generated in the dashboard after registration.
+Initialization has to be done before Jukko SDK can be customized and launched. The method will need an API key. The API key can be generated in the dashboard after registration.
 You can register on [Jukko website](https://jukko.com).
 
 * Swift:
@@ -54,7 +54,7 @@ You can register on [Jukko website](https://jukko.com).
     [JukkoSdk.shared initializeWithApiKey:@"API_KEY"];
 ```
 
-#### Ad showing
+#### Showing an ad
 
 You can show an ad by calling `showAd()` method:
 
@@ -72,40 +72,38 @@ You can show an ad by calling `showAd()` method:
         	// Do your stuff
     }];
 ```
+#### AdClosedEvent
+When ads presentation is finished, completion block will be executed on caller's thread. It will contain `AdClosedEvent` object with following information:
+
+1. `reason`: reason why ad was closed. Possible variants are:
+    * `closedByUser`: Ad view was closed by user interactions.
+    * `timeout`: Api servers were unresponsive.
+    * `networkConnectivity`: Network connectivity problems.
+    * `frequencyCapping`: `showAd()` called before frequency capping timeout ended.
+    * `error`: Unspecified error. Look at the `message` field for description.
+2. `message`: string containing extended description of reason.
+3. `events`: list of events that happened with Ad activity. May be null. Each event contains:
+    * `timestamp` of the event (uses current timezone).
+    * `adEvent` type of event. Possible variants:
+        * `launch`: Ad activity opened.
+        * `close`: Ad activity closed.
+        * `introShown`: NPO campaign intro was shown to user.
+        * `progressShown`: NPO campaign progress was shown to user.
+        * `outroShown`: NPO campaign outro was shown to user.
+        * `adShown`: Ad was shown to user.
+        * `adUrlOpened`: user clicked on url, that opened in external browser.
+
 ##### Technical notes:
 1.  Completion block of showAd function will be executed every time when you call showAd function: even when called during another showAd call or facing frequency limit.
 
 2.  SDK's WebViewController is presented modally by `present` function of application's rootViewController.
 
-	Presenting 2 viewControllers simultaneously by one parent VC is not allowed by Apple. Keep this in mind, don't call showAd function if, for example, AlertViewController is already presented, advert won't be shown.
-
-#### AdClosedEvent
-When ads presentation is finished, completion block will be executed on caller's thread. It will contain AdClosedE	vent object with following information:
-
-1. `reason`: reason why ad was closed. Possible variants are:
-    * `closedByUser`: Ad view was closed by user interactions
-    * `timeout`: Api servers were unresponsive
-    * `networkConnectivity`: Network connectivity problems
-    * `frequencyCapping`: `showAd()` called before frequency capping timeout ended
-    * `error`: Unspecified error. Look at the `message` field for description
-2. `message`: string containing extended description of reason
-3. `events`: list of events that happened with Ad activity. May be null. Each event contains:
-    * `timestamp` of the event (uses current timezone)
-    * `adEvent` type of event. Possible variants:
-        * `launch`: Ad activity opened
-        * `close`: Ad activity closed
-        * `introShown`: NPO campaign intro was shown to user
-        * `progressShown`: NPO campaign progress was shown to user
-        * `outroShown`: NPO campaign outro was shown to user
-        * `adShown`: Ad was shown to user
-        * `adUrlOpened`: user clicked on url, that opened in external browser
+	Presenting 2 viewControllers simultaneously by one parent VC is not allowed by Apple. Keep this in mind, don't call `showAd` function if, for example, AlertViewController is already presented, advert won't be shown.
 
 
 #### Frequency capping
 
-Sdk allows developer to set frequency capping for ads. It counts time since last ad was closed in seconds 
-and ignores `showAd()` calls in frequency capping period. Frequency capping can be changed
-using:
+Jukko SDK allows developer to set frequency capping for ads. It counts time since the last time when an ad was closed and ignores `showAd()` calls until frequency capping period ends. Frequency capping can be changed using:
 
 * Swift & Objective-C:
 
@@ -131,4 +129,4 @@ Log messages will contain `Jukko SDK` tag.
 
 ### Requirements
 
-Jukko SDK support devices starting with iOS 10.0
+Jukko SDK support devices starting with iOS 10.0.
