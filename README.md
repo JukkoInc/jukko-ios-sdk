@@ -39,7 +39,7 @@ Import to access public API.
     @import JukkoSdk;
 ```
 
-##### Initialization
+#### Initialization
 Initialization has to be done before Jukko can be customized and launched. The method will need the API. The API key can be generated in the dashboard after registration.
 You can register on [Jukko website](https://jukko.com).
 
@@ -54,7 +54,7 @@ You can register on [Jukko website](https://jukko.com).
     [JukkoSdk.shared initializeWithApiKey:@"API_KEY"];
 ```
 
-##### Ad showing
+#### Ad showing
 
 You can show an ad by calling `showAd()` method:
 
@@ -79,7 +79,7 @@ You can show an ad by calling `showAd()` method:
 
 	Presenting 2 viewControllers simultaneously by one parent VC is not allowed by Apple. Keep this in mind, don't call showAd function if, for example, AlertViewController is already presented, advert won't be shown.
 
-##### AdClosedEvent
+#### AdClosedEvent
 When ads presentation is finished, completion block will be executed on caller's thread. It will contain AdClosedE	vent object with following information:
 
 1. `reason`: reason why ad was closed. Possible variants are:
@@ -101,7 +101,7 @@ When ads presentation is finished, completion block will be executed on caller's
         * `adUrlOpened`: user clicked on url, that opened in external browser
 
 
-##### Frequency capping
+#### Frequency capping
 
 Sdk allows developer to set frequency capping for ads. It counts time since last ad was closed in seconds 
 and ignores `showAd()` calls in frequency capping period. Frequency capping can be changed
@@ -116,7 +116,7 @@ using:
 Default value is 0.
 
 
-##### Console logging
+#### Console logging
 
 By default, Jukko SDK logs only important messages, like unrecoverable error reasons.
 
