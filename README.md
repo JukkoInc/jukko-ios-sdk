@@ -16,11 +16,13 @@ a better way of doing business.
     * [Console logging](#console-logging)
 3. [Requirements](#requirements)
 
-### Integration
+### Integration - CocoaPods
 
-### CocoaPods
+In your project's podfile write:
 
-Information will be added later.
+```
+  pod 'JukkoSdk'
+```
 
 ### Usage 
 
@@ -70,7 +72,14 @@ You can show an ad by calling `showAd()` method:
         	// Do your stuff
     }];
 ```
+##### Technical notes:
+1.  Completion block of showAd function will be executed every time when you call showAd function: even when called during another showAd call or facing frequency limit.
 
+2.  SDK's WebViewController is presented modally by `present` function of application's rootViewController.
+
+	Presenting 2 viewControllers simultaneously by one parent VC is not allowed by Apple. Keep this in mind, don't call showAd function if, for example, AlertViewController is already presented, advert won't be shown.
+
+##### AdClosedEvent
 When ads presentation is finished, completion block will be executed on caller's thread. It will contain AdClosedE	vent object with following information:
 
 1. `reason`: reason why ad was closed. Possible variants are:
@@ -123,4 +132,3 @@ Log messages will contain `Jukko SDK` tag.
 ### Requirements
 
 Jukko SDK support devices starting with iOS 10.0
-
