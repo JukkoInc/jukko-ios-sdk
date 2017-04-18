@@ -73,7 +73,7 @@ You can show an ad by calling `showAd()` method:
     }];
 ```
 #### AdClosedEvent
-When ads presentation is finished, completion block will be executed on caller's thread. It will contain `AdClosedEvent` object with following information:
+When ads presentation is finished, completion block will be executed on caller's thread. It will contain `AdClosedEvent` object with the following information:
 
 1. `reason`: reason why ad was closed. Possible variants are:
     * `closedByUser`: Ad view was closed by user interactions.
@@ -81,7 +81,7 @@ When ads presentation is finished, completion block will be executed on caller's
     * `networkConnectivity`: Network connectivity problems.
     * `frequencyCapping`: `showAd()` called before frequency capping timeout ended.
     * `error`: Unspecified error. Look at the `message` field for description.
-2. `message`: string containing extended description of reason.
+2. `message`: string containing an extended description of reason.
 3. `events`: list of events that happened with Ad activity. May be null. Each event contains:
     * `timestamp` of the event (uses current timezone).
     * `adEvent` type of event. Possible variants:
@@ -103,7 +103,7 @@ When ads presentation is finished, completion block will be executed on caller's
 
 #### Frequency capping
 
-Jukko SDK allows developer to set frequency capping for ads. It counts time since the last time when an ad was closed and ignores `showAd()` calls until frequency capping period ends. Frequency capping can be changed using:
+Jukko SDK allows a developer to set frequency capping for ads. It counts the time since the last time when an ad was closed and ignores `showAd()` calls until frequency capping period ends. Frequency capping can be changed using:
 
 * Swift & Objective-C:
 
