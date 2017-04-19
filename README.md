@@ -8,13 +8,7 @@ If you have any questions during the integration process, you can reach us at [d
 and we'll get back to you ASAP. Thanks for joining our movement to create a better world and
 a better way of doing business.
 
-1. [Integration](#integration)
-2. [Usage](#usage)
-    * [Initialization](#usage)
-    * [Ad showing](#ad-showing)
-    * [Frequency capping](#frequency-capping)
-    * [Console logging](#console-logging)
-3. [Requirements](#requirements)
+[TOC]
 
 ### Integration - CocoaPods
 
