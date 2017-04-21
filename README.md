@@ -35,7 +35,7 @@ Import to access public API.
 
 #### Initialization
 Initialization has to be done before Jukko SDK can be customized and launched. The method will need an API key. The API key can be generated in the dashboard after registration.
-You can register on [Jukko website](https://jukko.com).
+You can register on [Jukko dashboard](https://dashboard.staging.jukko.com).
 
 * Swift:
 
