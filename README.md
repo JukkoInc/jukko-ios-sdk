@@ -1,4 +1,4 @@
-># Jukko Android Documentation
+># Jukko iOS Documentation
 
 Welcome to the Jukko developer SDK documentation. Follow our step-by-step instructions to
 integrate Jukko and start monetizing while converting your app into a catalyst for social
