@@ -12,37 +12,39 @@ a better way of doing business.
 
 ### Integration - CocoaPods
 
-In your project's podfile write:
+Add our latest pod to your project's podfile:
 
 ```
-  pod 'JukkoSdk'
+  pod 'JukkoSDK-2.0.1'
 ```
 
-### Usage 
+### Importing 
 
 Import to access public API.
 
-* Swift: 
+`Swift`
 
 ```swift
     import JukkoSdk
 ```
-* Objective-C:
+`Objective-C`
 
 ```obj-c
     @import JukkoSdk;
 ```
 
 #### Initialization
-Initialization has to be done before Jukko SDK can be customized and launched. The method will need an API key. The API key can be generated in the dashboard after registration.
+Initialization has to be done before Jukko SDK can be customized and launched.  The method will need an API key. The API key can be generated in the dashboard after registration.
 You can register on [Jukko dashboard](https://dashboard.staging.jukko.com).
 
-* Swift:
+After registering, you can are ready to `initalize()` with our API:
+
+`Swift`
 
 ```swift
     JukkoSdk.shared.initialize(apiKey: "API_KEY");
 ```
-* Objective-C:
+`Objective-C`
 
 ```obj-c
     [JukkoSdk.shared initializeWithApiKey:@"API_KEY"];
@@ -50,16 +52,16 @@ You can register on [Jukko dashboard](https://dashboard.staging.jukko.com).
 
 #### Showing an ad
 
-You can show an ad by calling `showAd()` method:
+Next, you can show an ad by calling `showAd()` method:
 
-* Swift:
+`Swift`
 
 ```swift
      JukkoSdk.shared.showAd(){(event) in
           // Do your stuff
      }
 ```
-* Objective-C:
+`Objective-C`
 
 ```obj-c
 	[JukkoSdk.shared showAdWithCompletion:^(AdClosedEvent * event){
@@ -91,8 +93,7 @@ When ads presentation is finished, completion block will be executed on caller's
 1.  Completion block of showAd function will be executed every time when you call showAd function: even when called during another showAd call or facing frequency limit.
 
 2.  SDK's WebViewController is presented modally by `present` function of application's rootViewController.
-
-	Presenting 2 viewControllers simultaneously by one parent VC is not allowed by Apple. Keep this in mind, don't call `showAd` function if, for example, AlertViewController is already presented, advert won't be shown.
+              	*Presenting 2 viewControllers simultaneously by one parent VC is not allowed by Apple. Keep this in mind, don't call `showAd()` function if, for example, AlertViewController is already presented, advert won't be shown.*
 
 
 #### Frequency capping
