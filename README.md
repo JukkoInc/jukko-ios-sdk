@@ -110,7 +110,7 @@ The Jukko SDK allows a developer to set frequency capping for ads. It counts the
 JukkoSdk.shared.adsFrequency = timeInSeconds;
 ```
 
-Default value is 0.
+Set value to 0 to disable frequency capping.
 
 ## Console logging
 
