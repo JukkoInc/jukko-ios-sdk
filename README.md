@@ -2,7 +2,7 @@
 
 ![Jukko](images/intro.png)
 
-Welcome to the Jukko developer SDK documentation. Follow our step-by-step instructions to
+Welcome to the Jukko developer SDK documentation for iOS. Follow our step-by-step instructions to
 integrate Jukko and start monetizing while converting your app into a catalyst for social
 impact today!
 
@@ -34,11 +34,11 @@ import JukkoSdk
 
 ## Requirements
 
-Jukko SDK support devices starting with iOS 10.0.
+The Jukko SDK support devices starting with iOS 10.0.
 
 ## Initialization
 
-Initialization has to be done before Jukko SDK can be customized and launched. The method will need an API key. The API key can be generated in the dashboard after registration.
+Initialization has to be done before  theJukko SDK can be customized and launched. The method will need an API key. The API key can be generated in the dashboard after registration.
 You can register on [Jukko dashboard](https://dashboard.jukko.com).
 
 After registering, you are ready to `initalize()` with API key:
@@ -77,7 +77,7 @@ JukkoSdk.shared.showAd(){ event in
 
 ### Technical notes
 
-1. Completion block of showAd function will be executed every time when you call showAd function: even when called during another showAd call or facing frequency limit.
+1. Completion block of showAd function will be executed every time when you call showAd function, even when called during another showAd call or facing frequency limit.
 
 2. SDK's ViewController is presented on custom window.
 
@@ -85,24 +85,24 @@ JukkoSdk.shared.showAd(){ event in
 
 When ads presentation is finished, completion block will be executed on caller's thread. It will contain `ShowAdResult` object with the following information:
 
-1. `reason`: reason why ad was closed. Possible variants are:
+1. `reason`: Reason why ad was closed. Possible variants are:
     * `closedByUser`: Ad view was closed by user interactions.
-    * `timeout`: Api servers were unresponsive.
+    * `timeout`: API servers were unresponsive.
     * `frequencyCapping`: `showAd()` called before frequency capping timeout ended.
     * `error`: Unspecified error. Look at the `message` field for description.
     * `networkConnectivity`: Network connectivity problems.
-2. `message`: string containing an extended description of reason.
-3. `events`: list of events that happened with Ad activity. May be null. Each event contains:
+2. `message`: String containing an extended description of reason.
+3. `events`: List of events that happened with ad activity. May be empty. Each event contains:
     * `timestamp` of the event (uses current timezone).
     * `adEvent` type of event. Possible variants:
         * `launch`: Ad activity opened.
         * `adShown`: Ad was shown to user.
-        * `adUrlOpened`: user clicked on url, that opened in external browser.
+        * `adUrlOpened`: User clicked on url, that opened in external browser.
         * `close`: Ad activity closed.
 
 ## Frequency capping
 
-Jukko SDK allows a developer to set frequency capping for ads. It counts the time since the last time when an ad was closed and ignores `showAd()` calls until frequency capping period ends. Frequency capping can be changed using:
+The Jukko SDK allows a developer to set frequency capping for ads. It counts the time since the last time when an ad was closed and ignores `showAd()` calls until frequency capping period ends. Frequency capping can be changed using:
 
 * Swift & Objective-C:
 
@@ -114,7 +114,7 @@ Default value is 0.
 
 ## Console logging
 
-By default, Jukko SDK logs only important messages, like unrecoverable error reasons.
+By default, Jukko SDK logs only important messages, such as unrecoverable error reasons.
 
 You can enable debug logging by calling:
 
