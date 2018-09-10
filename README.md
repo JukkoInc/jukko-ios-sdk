@@ -38,7 +38,7 @@ The Jukko SDK support devices starting with iOS 10.0.
 
 ## Initialization
 
-Initialization has to be done before  theJukko SDK can be customized and launched. The method will need an API key. The API key can be generated in the dashboard after registration.
+Initialization has to be done before the Jukko SDK can be customized and launched. The method will need an API key. The API key can be generated in the dashboard after registration.
 You can register on [Jukko dashboard](https://dashboard.jukko.com).
 
 After registering, you are ready to `initalize()` with API key:
