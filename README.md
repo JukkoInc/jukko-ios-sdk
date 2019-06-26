@@ -10,7 +10,7 @@ If you have any questions during the integration process, you can reach us at [d
 
 ## Integration - CocoaPods
 
-Add our latest pod to your project's podfile:
+Add our latest pod to your project's `Podfile`:
 
 ```podspec
 pod 'JukkoSDK'
@@ -34,7 +34,7 @@ import JukkoSdk
 
 ## Requirements
 
-The Jukko SDK support devices starting with iOS 10.0.
+Jukko SDK support devices starting with iOS 10.0.
 
 ## Initialization
 
@@ -45,7 +45,7 @@ After registering, you are ready to `initalize()` with API key:
 
 ### Swift
 
-```Swift
+```swift
 JukkoSdk.shared.initialize(apiKey: "API_KEY") { result in ... };
 ```
 
@@ -75,15 +75,13 @@ You can provide Jukko with information about user's age group and gender. It wil
 JukkoSdk.shared.setUserInfo(age: age, gender: gender) { result in
     result
         .ifSuccess {
-            // handle success result here
+            // Handle success result here
     }
         .ifFailure {
-            // handle failure result here
+            // Handle failure result here
     }
 }
 ```
-
-### Objective-C
 
 ```obj-c
 [JukkoSdk.shared setUserInfoWithAge:AgeAge_13_17 gender:GenderFemale completion:^(OperationResult result) {
@@ -144,19 +142,20 @@ JukkoSdk.shared.showAd(){ event in
 
 When ads presentation is finished, completion block will be executed on caller's thread. It will contain `ShowAdResult` object with the following information:
 
-1. `reason`: Reason why ad was closed. Possible variants are:
+1. `reason`: reason why ad was closed. Possible variants are:
     * `closedByUser`: Ad view was closed by user interactions.
-    * `timeout`: API servers were unresponsive.
+    * `timeout`: Api servers were unresponsive.
     * `frequencyCapping`: `showAd()` called before frequency capping timeout ended.
     * `error`: Unspecified error. Look at the `message` field for description.
     * `networkConnectivity`: Network connectivity problems.
 2. `message`: String containing an extended description of reason.
 3. `events`: List of events that happened with ad activity. May be null. Each event contains:
+
     * `timestamp` of the event (uses current timezone).
     * `adEvent` type of event. Possible variants:
         * `launch`: Ad activity opened.
         * `adShown`: Ad was shown to user.
-        * `adUrlOpened`: User clicked on url, that opened in external browser.
+        * `adUrlOpened`: user clicked on url, that opened in external browser.
         * `close`: Ad activity closed.
 
 ## Initialization status
@@ -182,10 +181,10 @@ The Jukko SDK allows a developer to set frequency capping for ads. It counts the
 ### Swift & Objective-C
 
 ```swift
-JukkoSdk.shared.adsFrequency = timeInSeconds;
+    JukkoSdk.shared.adsFrequency = timeInSeconds;
 ```
 
-Set value to `0` to disable frequency capping.
+Default value is 0.
 
 ## Console logging
 
@@ -196,7 +195,7 @@ You can enable debug logging by calling:
 ### Swift & Objective-C
 
 ```swift
-JukkoSdk.shared.debugMode = true;
+    JukkoSdk.shared.debugMode = true;
 ```
 
 Log messages will contain `Jukko SDK` tag.
