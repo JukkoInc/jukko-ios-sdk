@@ -41,7 +41,7 @@ Jukko SDK support devices starting with iOS 10.0.
 Initialization has to be done before the Jukko SDK can be customized and launched. The method will need an API key. The API key can be generated in the dashboard after registration.
 You can register on [Jukko dashboard](https://dashboard.jukko.com).
 
-After registering, you are ready to `initalize()` with API key:
+After registering, you are ready to `initialize()` with API key:
 
 ### Swift
 
@@ -164,7 +164,7 @@ Call `isInitialized` to determine if SDK is initialized.
 
 ### Swift
 
-```Swift
+```swift
 let initialized = JukkoSdk.shared.isInitialized
 ```
 
@@ -181,7 +181,7 @@ The Jukko SDK allows a developer to set frequency capping for ads. It counts the
 ### Swift & Objective-C
 
 ```swift
-    JukkoSdk.shared.adsFrequency = timeInSeconds;
+JukkoSdk.shared.adsFrequency = timeInSeconds;
 ```
 
 Default value is 0.
@@ -195,7 +195,7 @@ You can enable debug logging by calling:
 ### Swift & Objective-C
 
 ```swift
-    JukkoSdk.shared.debugMode = true;
+JukkoSdk.shared.debugMode = true;
 ```
 
 Log messages will contain `Jukko SDK` tag.
