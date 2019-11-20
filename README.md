@@ -13,7 +13,7 @@ If you have any questions during the integration process, you can reach us at [d
 Add our latest pod to your project's `Podfile`:
 
 ```podspec
-pod 'JukkoSDK'
+pod 'JukkoSdk'
 ```
 
 ## Importing
