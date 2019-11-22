@@ -13,7 +13,7 @@ If you have any questions during the integration process, you can reach us at [d
 Add our latest pod to your project's `Podfile`:
 
 ```podspec
-pod 'JukkoSDK'
+pod 'JukkoSdk'
 ```
 
 ## Importing
@@ -134,13 +134,13 @@ JukkoSdk.shared.showAd(){ event in
 
 ### Technical notes
 
-1. Completion block of `showAd` function will be executed every time when you call `showAd` function, even when called during another `showAd` call or facing a frequency limit.
+1. Completion block of `showAd` function will be executed in main thread every time when you call `showAd` function, even when called during another `showAd` call or facing a frequency limit.
 
 2. SDK's ViewController is presented on custom window.
 
 ### ShowAdResult
 
-When ads presentation is finished, completion block will be executed on caller's thread. It will contain `ShowAdResult` object with the following information:
+When ads presentation is finished, completion block will be executed in main thread. It will contain `ShowAdResult` object with the following information:
 
 1. `reason`: reason why ad was closed. Possible variants are:
     * `closedByUser`: Ad view was closed by user interactions.
