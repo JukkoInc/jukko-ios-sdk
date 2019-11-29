@@ -1,0 +1,11 @@
+platform :ios, '10.0'
+
+workspace 'JukkoSample'
+project 'Jukko-Sample.xcodeproj'
+
+target 'Jukko Production' do
+  use_frameworks!
+
+  pod 'JukkoSdk'
+
+end
