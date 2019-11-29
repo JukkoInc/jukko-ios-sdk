@@ -1,0 +1,1063 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0837C694B0B798ECFDA7C0E8 /* Pods_Jukko_Production.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8B0860F03A2F1076D192093 /* Pods_Jukko_Production.framework */; };
+		5D131334225C98D9007A6B2D /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D131331225C98D9007A6B2D /* UIColor+Palette.swift */; };
+		5D131339225C9B2E007A6B2D /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D131336225C9B2E007A6B2D /* UIView+Extensions.swift */; };
+		5D13133D225C9CDE007A6B2D /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D13133A225C9CDE007A6B2D /* Array+Extensions.swift */; };
+		5D3721CE20B2C9780041BB34 /* Localization.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D3721CB20B2C9780041BB34 /* Localization.strings */; };
+		5D3721D320B2C9A70041BB34 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3721D020B2C9A70041BB34 /* Message.swift */; };
+		5D3721D820B2CB680041BB34 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3721D520B2CB680041BB34 /* String+Extensions.swift */; };
+		5D3721E220B2DA9F0041BB34 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3721DF20B2DA9F0041BB34 /* AppError.swift */; };
+		5D3721E620B2DB040041BB34 /* DescriptionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3721E320B2DB040041BB34 /* DescriptionProtocol.swift */; };
+		5D3721EA20B2DB130041BB34 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3721E720B2DB130041BB34 /* UIStoryboard+Extensions.swift */; };
+		5D3721EF20B2DB750041BB34 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3721EC20B2DB740041BB34 /* BaseViewController.swift */; };
+		5D3721F720B2DCD00041BB34 /* PlainTestModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3721F420B2DCD00041BB34 /* PlainTestModuleProtocols.swift */; };
+		5D37220120B2DDD60041BB34 /* MainsScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3721FE20B2DDD60041BB34 /* MainsScreenRouter.swift */; };
+		5D37220520B2E3F40041BB34 /* EnabilityState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37220220B2E3F40041BB34 /* EnabilityState.swift */; };
+		5D37220620B2E4EB0041BB34 /* MainScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37218420B2C4D00041BB34 /* MainScreenPresenter.swift */; };
+		5D37220E20B2F4870041BB34 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37218220B2C4B50041BB34 /* MainScreenViewController.swift */; };
+		5D37221020B2F48A0041BB34 /* MainScreenModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37217D20B2C4500041BB34 /* MainScreenModule.swift */; };
+		5D37221220B2F6070041BB34 /* PlainTestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37219920B2C5F60041BB34 /* PlainTestRouter.swift */; };
+		5D37221420B2F60B0041BB34 /* PlainTestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37219C20B2C60B0041BB34 /* PlainTestPresenter.swift */; };
+		5D37221620B2F60F0041BB34 /* PlainTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37219E20B2C61D0041BB34 /* PlainTestViewController.swift */; };
+		5D37221820B2F6680041BB34 /* PlainTestModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3721A020B2C6290041BB34 /* PlainTestModule.swift */; };
+		5D37221C20B309B50041BB34 /* AlertTestProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37221920B309B50041BB34 /* AlertTestProtocols.swift */; };
+		5D37221F20B30CEE0041BB34 /* AlertTestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3721B320B2C7680041BB34 /* AlertTestPresenter.swift */; };
+		5D37222120B30E0E0041BB34 /* AlertTestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3721B120B2C75D0041BB34 /* AlertTestRouter.swift */; };
+		5D37222320B30E130041BB34 /* AlertTestModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3721B720B2C77F0041BB34 /* AlertTestModule.swift */; };
+		5D37222520B30E1A0041BB34 /* AlertTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3721B520B2C7740041BB34 /* AlertTestViewController.swift */; };
+		5D37222920B313E60041BB34 /* WindowTestModuleProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D37222620B313E60041BB34 /* WindowTestModuleProtocols.swift */; };
+		5D6D227520D3B0B50035C2AA /* ProductionConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6D227420D3B0B50035C2AA /* ProductionConsts.swift */; };
+		5D6D227920D3B0D70035C2AA /* BaseConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6D227620D3B0D70035C2AA /* BaseConsts.swift */; };
+		5D6D227B20D3B14B0035C2AA /* WindowTestModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3721C120B2C7B80041BB34 /* WindowTestModule.swift */; };
+		5D6D227D20D3B1520035C2AA /* WindowTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3721C520B2C7D20041BB34 /* WindowTestViewController.swift */; };
+		5D6D227F20D3B1560035C2AA /* WindowTestPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3721C320B2C7C40041BB34 /* WindowTestPresenter.swift */; };
+		5D6D228120D3B15A0035C2AA /* WindowTestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3721BB20B2C7960041BB34 /* WindowTestRouter.swift */; };
+		5D8734B4225B7B26004C3D3A /* CustomerInfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8734B1225B7B26004C3D3A /* CustomerInfoScreen.swift */; };
+		5D8734B5225B7B26004C3D3A /* CustomerInfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8734B1225B7B26004C3D3A /* CustomerInfoScreen.swift */; };
+		5D8734B9225B7B35004C3D3A /* CustomerInfoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8734B6225B7B35004C3D3A /* CustomerInfoScreenViewController.swift */; };
+		5D8734BA225B7B35004C3D3A /* CustomerInfoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8734B6225B7B35004C3D3A /* CustomerInfoScreenViewController.swift */; };
+		5D8734BE225B7B46004C3D3A /* CustomerInfoScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8734BB225B7B46004C3D3A /* CustomerInfoScreenPresenter.swift */; };
+		5D8734BF225B7B46004C3D3A /* CustomerInfoScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8734BB225B7B46004C3D3A /* CustomerInfoScreenPresenter.swift */; };
+		5D8734E0225B800F004C3D3A /* CustomerInfoScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8734DD225B800F004C3D3A /* CustomerInfoScreenRouter.swift */; };
+		5D8734E1225B800F004C3D3A /* CustomerInfoScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8734DD225B800F004C3D3A /* CustomerInfoScreenRouter.swift */; };
+		5D8734F3225B8FF0004C3D3A /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D8734F0225B8FF0004C3D3A /* ProgressView.swift */; };
+		5D873516225C8E34004C3D3A /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D873513225C8E34004C3D3A /* UIButton+Extensions.swift */; };
+		5DC813B020AC6F5C00986603 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846188171E5C338F002C0B81 /* AppDelegate.swift */; };
+		5DC813B220AC6F5C00986603 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846188201E5C338F002C0B81 /* LaunchScreen.storyboard */; };
+		5DC813B320AC6F5C00986603 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8461881E1E5C338F002C0B81 /* Assets.xcassets */; };
+		5DC813B420AC6F5C00986603 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8461881B1E5C338F002C0B81 /* Main.storyboard */; };
+		8461882D1E5C338F002C0B81 /* Jukko_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8461882C1E5C338F002C0B81 /* Jukko_SampleTests.swift */; };
+		846188381E5C338F002C0B81 /* Jukko_SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846188371E5C338F002C0B81 /* Jukko_SampleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DC813C020AC723800986603 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8420834F1E8E731300F6B651 /* jukko-ios-sdk.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F7DF4E1E52EABE0064B86A;
+			remoteInfo = "jukko-production";
+		};
+		842083561E8E731300F6B651 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8420834F1E8E731300F6B651 /* jukko-ios-sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84FC65F31E893F2400EC25E9;
+			remoteInfo = "jukko-ios-sdk-staging";
+		};
+		8420835A1E8E731300F6B651 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8420834F1E8E731300F6B651 /* jukko-ios-sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84F7DF4F1E52EABE0064B86A;
+			remoteInfo = "jukko-production";
+		};
+		8420835C1E8E731300F6B651 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8420834F1E8E731300F6B651 /* jukko-ios-sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 84F7DF581E52EABE0064B86A;
+			remoteInfo = "jukko-ios-sdkTests";
+		};
+		849869501EA9046F0073137B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8420834F1E8E731300F6B651 /* jukko-ios-sdk.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 849869491EA902CC0073137B;
+			remoteInfo = "jukko-demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3491CD544688C954A75C4E75 /* Pods-Jukko Production.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jukko Production.debug.xcconfig"; path = "Target Support Files/Pods-Jukko Production/Pods-Jukko Production.debug.xcconfig"; sourceTree = "<group>"; };
+		5D131331225C98D9007A6B2D /* UIColor+Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
+		5D131336225C9B2E007A6B2D /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		5D13133A225C9CDE007A6B2D /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		5D37217D20B2C4500041BB34 /* MainScreenModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModule.swift; sourceTree = "<group>"; };
+		5D37218220B2C4B50041BB34 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		5D37218420B2C4D00041BB34 /* MainScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenPresenter.swift; sourceTree = "<group>"; };
+		5D37219920B2C5F60041BB34 /* PlainTestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTestRouter.swift; sourceTree = "<group>"; };
+		5D37219C20B2C60B0041BB34 /* PlainTestPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTestPresenter.swift; sourceTree = "<group>"; };
+		5D37219E20B2C61D0041BB34 /* PlainTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTestViewController.swift; sourceTree = "<group>"; };
+		5D3721A020B2C6290041BB34 /* PlainTestModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTestModule.swift; sourceTree = "<group>"; };
+		5D3721B120B2C75D0041BB34 /* AlertTestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTestRouter.swift; sourceTree = "<group>"; };
+		5D3721B320B2C7680041BB34 /* AlertTestPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTestPresenter.swift; sourceTree = "<group>"; };
+		5D3721B520B2C7740041BB34 /* AlertTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTestViewController.swift; sourceTree = "<group>"; };
+		5D3721B720B2C77F0041BB34 /* AlertTestModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTestModule.swift; sourceTree = "<group>"; };
+		5D3721BB20B2C7960041BB34 /* WindowTestRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowTestRouter.swift; sourceTree = "<group>"; };
+		5D3721C120B2C7B80041BB34 /* WindowTestModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowTestModule.swift; sourceTree = "<group>"; };
+		5D3721C320B2C7C40041BB34 /* WindowTestPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowTestPresenter.swift; sourceTree = "<group>"; };
+		5D3721C520B2C7D20041BB34 /* WindowTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowTestViewController.swift; sourceTree = "<group>"; };
+		5D3721CB20B2C9780041BB34 /* Localization.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localization.strings; sourceTree = "<group>"; };
+		5D3721D020B2C9A70041BB34 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		5D3721D520B2CB680041BB34 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		5D3721DF20B2DA9F0041BB34 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		5D3721E320B2DB040041BB34 /* DescriptionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionProtocol.swift; sourceTree = "<group>"; };
+		5D3721E720B2DB130041BB34 /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		5D3721EC20B2DB740041BB34 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5D3721F420B2DCD00041BB34 /* PlainTestModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainTestModuleProtocols.swift; sourceTree = "<group>"; };
+		5D3721FE20B2DDD60041BB34 /* MainsScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainsScreenRouter.swift; sourceTree = "<group>"; };
+		5D37220220B2E3F40041BB34 /* EnabilityState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnabilityState.swift; sourceTree = "<group>"; };
+		5D37221920B309B50041BB34 /* AlertTestProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertTestProtocols.swift; sourceTree = "<group>"; };
+		5D37222620B313E60041BB34 /* WindowTestModuleProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowTestModuleProtocols.swift; sourceTree = "<group>"; };
+		5D6D227420D3B0B50035C2AA /* ProductionConsts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionConsts.swift; sourceTree = "<group>"; };
+		5D6D227620D3B0D70035C2AA /* BaseConsts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseConsts.swift; sourceTree = "<group>"; };
+		5D8734B1225B7B26004C3D3A /* CustomerInfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInfoScreen.swift; sourceTree = "<group>"; };
+		5D8734B6225B7B35004C3D3A /* CustomerInfoScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInfoScreenViewController.swift; sourceTree = "<group>"; };
+		5D8734BB225B7B46004C3D3A /* CustomerInfoScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInfoScreenPresenter.swift; sourceTree = "<group>"; };
+		5D8734DD225B800F004C3D3A /* CustomerInfoScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerInfoScreenRouter.swift; sourceTree = "<group>"; };
+		5D8734F0225B8FF0004C3D3A /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
+		5D873513225C8E34004C3D3A /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
+		5DC0BD2D20DD102B006A3B84 /* Jukko Sample Production Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Jukko Sample Production Info.plist"; sourceTree = SOURCE_ROOT; };
+		5DC813BC20AC6F5C00986603 /* Jukko Production.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jukko Production.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		842083481E8E71AB00F6B651 /* JukkoSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JukkoSdk.framework; path = "../build/Debug-iphoneos/JukkoSdk.framework"; sourceTree = "<group>"; };
+		8420834F1E8E731300F6B651 /* jukko-ios-sdk.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "jukko-ios-sdk.xcodeproj"; path = "../jukko-ios-sdk.xcodeproj"; sourceTree = "<group>"; };
+		846188171E5C338F002C0B81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8461881C1E5C338F002C0B81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8461881E1E5C338F002C0B81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		846188211E5C338F002C0B81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		846188281E5C338F002C0B81 /* Jukko-SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jukko-SampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8461882C1E5C338F002C0B81 /* Jukko_SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jukko_SampleTests.swift; sourceTree = "<group>"; };
+		8461882E1E5C338F002C0B81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846188331E5C338F002C0B81 /* Jukko-SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jukko-SampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		846188371E5C338F002C0B81 /* Jukko_SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jukko_SampleUITests.swift; sourceTree = "<group>"; };
+		846188391E5C338F002C0B81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A06CEEC306FF2D2BF0C7461B /* Pods-Jukko Production.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jukko Production.release.xcconfig"; path = "Target Support Files/Pods-Jukko Production/Pods-Jukko Production.release.xcconfig"; sourceTree = "<group>"; };
+		D8B0860F03A2F1076D192093 /* Pods_Jukko_Production.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jukko_Production.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DC813B520AC6F5C00986603 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0837C694B0B798ECFDA7C0E8 /* Pods_Jukko_Production.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		846188251E5C338F002C0B81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		846188301E5C338F002C0B81 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D37217720B2C2E90041BB34 /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5D37217D20B2C4500041BB34 /* MainScreenModule.swift */,
+				5D37218220B2C4B50041BB34 /* MainScreenViewController.swift */,
+				5D37218420B2C4D00041BB34 /* MainScreenPresenter.swift */,
+				5D3721FE20B2DDD60041BB34 /* MainsScreenRouter.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		5D37218620B2C4D90041BB34 /* AlertTestScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5D37218720B2C4E40041BB34 /* Module */,
+				5D37218820B2C4EF0041BB34 /* View */,
+				5D37218E20B2C5820041BB34 /* Presenter */,
+				5D37218F20B2C5870041BB34 /* Router */,
+			);
+			path = AlertTestScreen;
+			sourceTree = "<group>";
+		};
+		5D37218720B2C4E40041BB34 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				5D3721B720B2C77F0041BB34 /* AlertTestModule.swift */,
+				5D37221920B309B50041BB34 /* AlertTestProtocols.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		5D37218820B2C4EF0041BB34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5D3721B520B2C7740041BB34 /* AlertTestViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D37218920B2C5290041BB34 /* WindowTestScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5D37219120B2C59C0041BB34 /* Module */,
+				5D37218A20B2C53D0041BB34 /* View */,
+				5D37219020B2C58E0041BB34 /* Presenter */,
+				5D37219320B2C5AE0041BB34 /* Router */,
+			);
+			path = WindowTestScreen;
+			sourceTree = "<group>";
+		};
+		5D37218A20B2C53D0041BB34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5D3721C520B2C7D20041BB34 /* WindowTestViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D37218B20B2C5430041BB34 /* PlainTestScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5D37219520B2C5BE0041BB34 /* Module */,
+				5D37219620B2C5C90041BB34 /* View */,
+				5D37219720B2C5CD0041BB34 /* Presenter */,
+				5D37219820B2C5D30041BB34 /* Router */,
+			);
+			path = PlainTestScreen;
+			sourceTree = "<group>";
+		};
+		5D37218C20B2C54C0041BB34 /* Advert Presentation Cases */ = {
+			isa = PBXGroup;
+			children = (
+				5D37218620B2C4D90041BB34 /* AlertTestScreen */,
+				5D37218920B2C5290041BB34 /* WindowTestScreen */,
+				5D37218B20B2C5430041BB34 /* PlainTestScreen */,
+			);
+			path = "Advert Presentation Cases";
+			sourceTree = "<group>";
+		};
+		5D37218E20B2C5820041BB34 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5D3721B320B2C7680041BB34 /* AlertTestPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5D37218F20B2C5870041BB34 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5D3721B120B2C75D0041BB34 /* AlertTestRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5D37219020B2C58E0041BB34 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5D3721C320B2C7C40041BB34 /* WindowTestPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5D37219120B2C59C0041BB34 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				5D3721C120B2C7B80041BB34 /* WindowTestModule.swift */,
+				5D37222620B313E60041BB34 /* WindowTestModuleProtocols.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		5D37219320B2C5AE0041BB34 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5D3721BB20B2C7960041BB34 /* WindowTestRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5D37219520B2C5BE0041BB34 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				5D3721A020B2C6290041BB34 /* PlainTestModule.swift */,
+				5D3721F420B2DCD00041BB34 /* PlainTestModuleProtocols.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		5D37219620B2C5C90041BB34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5D37219E20B2C61D0041BB34 /* PlainTestViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5D37219720B2C5CD0041BB34 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5D37219C20B2C60B0041BB34 /* PlainTestPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5D37219820B2C5D30041BB34 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5D37219920B2C5F60041BB34 /* PlainTestRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5D3721CF20B2C9860041BB34 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5D8734F0225B8FF0004C3D3A /* ProgressView.swift */,
+				5D3721EB20B2DB170041BB34 /* Protocols */,
+				5D3721D420B2CB550041BB34 /* Extensions */,
+				5D3721D020B2C9A70041BB34 /* Message.swift */,
+				5D3721DF20B2DA9F0041BB34 /* AppError.swift */,
+				5D3721EC20B2DB740041BB34 /* BaseViewController.swift */,
+				5D37220220B2E3F40041BB34 /* EnabilityState.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5D3721D420B2CB550041BB34 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5D3721D520B2CB680041BB34 /* String+Extensions.swift */,
+				5D3721E720B2DB130041BB34 /* UIStoryboard+Extensions.swift */,
+				5D873513225C8E34004C3D3A /* UIButton+Extensions.swift */,
+				5D131331225C98D9007A6B2D /* UIColor+Palette.swift */,
+				5D131336225C9B2E007A6B2D /* UIView+Extensions.swift */,
+				5D13133A225C9CDE007A6B2D /* Array+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5D3721EB20B2DB170041BB34 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5D3721E320B2DB040041BB34 /* DescriptionProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5D37224420B451390041BB34 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5D6D226F20D3B0740035C2AA /* Consts */,
+				8461881B1E5C338F002C0B81 /* Main.storyboard */,
+				8461881E1E5C338F002C0B81 /* Assets.xcassets */,
+				846188201E5C338F002C0B81 /* LaunchScreen.storyboard */,
+				5D3721CB20B2C9780041BB34 /* Localization.strings */,
+				846188171E5C338F002C0B81 /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D6D226F20D3B0740035C2AA /* Consts */ = {
+			isa = PBXGroup;
+			children = (
+				5D6D227620D3B0D70035C2AA /* BaseConsts.swift */,
+				5D6D227420D3B0B50035C2AA /* ProductionConsts.swift */,
+			);
+			path = Consts;
+			sourceTree = "<group>";
+		};
+		5D8734B0225B7AFC004C3D3A /* CustomerInfoScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5D8734B1225B7B26004C3D3A /* CustomerInfoScreen.swift */,
+				5D8734B6225B7B35004C3D3A /* CustomerInfoScreenViewController.swift */,
+				5D8734BB225B7B46004C3D3A /* CustomerInfoScreenPresenter.swift */,
+				5D8734DD225B800F004C3D3A /* CustomerInfoScreenRouter.swift */,
+			);
+			path = CustomerInfoScreen;
+			sourceTree = "<group>";
+		};
+		842083501E8E731300F6B651 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				849869511EA9046F0073137B /* JukkoSdk.framework */,
+				842083571E8E731300F6B651 /* JukkoSdk.framework */,
+				8420835B1E8E731300F6B651 /* JukkoSdk.framework */,
+				8420835D1E8E731300F6B651 /* jukko-ios-sdkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8461880B1E5C338F002C0B81 = {
+			isa = PBXGroup;
+			children = (
+				8420834F1E8E731300F6B651 /* jukko-ios-sdk.xcodeproj */,
+				846188161E5C338F002C0B81 /* Jukko-Sample */,
+				8461882B1E5C338F002C0B81 /* Jukko-SampleTests */,
+				846188361E5C338F002C0B81 /* Jukko-SampleUITests */,
+				846188151E5C338F002C0B81 /* Products */,
+				846188451E5C33C7002C0B81 /* Frameworks */,
+				F7E89F4C62E96069F3F40C04 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		846188151E5C338F002C0B81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				846188281E5C338F002C0B81 /* Jukko-SampleTests.xctest */,
+				846188331E5C338F002C0B81 /* Jukko-SampleUITests.xctest */,
+				5DC813BC20AC6F5C00986603 /* Jukko Production.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		846188161E5C338F002C0B81 /* Jukko-Sample */ = {
+			isa = PBXGroup;
+			children = (
+				5D8734B0225B7AFC004C3D3A /* CustomerInfoScreen */,
+				5D3721CF20B2C9860041BB34 /* Utils */,
+				5D37218C20B2C54C0041BB34 /* Advert Presentation Cases */,
+				5D37217720B2C2E90041BB34 /* MainScreen */,
+				5D37224420B451390041BB34 /* Supporting Files */,
+				5DC0BD2D20DD102B006A3B84 /* Jukko Sample Production Info.plist */,
+			);
+			path = "Jukko-Sample";
+			sourceTree = "<group>";
+		};
+		8461882B1E5C338F002C0B81 /* Jukko-SampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				8461882C1E5C338F002C0B81 /* Jukko_SampleTests.swift */,
+				8461882E1E5C338F002C0B81 /* Info.plist */,
+			);
+			path = "Jukko-SampleTests";
+			sourceTree = "<group>";
+		};
+		846188361E5C338F002C0B81 /* Jukko-SampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				846188371E5C338F002C0B81 /* Jukko_SampleUITests.swift */,
+				846188391E5C338F002C0B81 /* Info.plist */,
+			);
+			path = "Jukko-SampleUITests";
+			sourceTree = "<group>";
+		};
+		846188451E5C33C7002C0B81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				842083481E8E71AB00F6B651 /* JukkoSdk.framework */,
+				D8B0860F03A2F1076D192093 /* Pods_Jukko_Production.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7E89F4C62E96069F3F40C04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3491CD544688C954A75C4E75 /* Pods-Jukko Production.debug.xcconfig */,
+				A06CEEC306FF2D2BF0C7461B /* Pods-Jukko Production.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DC813A920AC6F5C00986603 /* Jukko Production */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DC813B920AC6F5C00986603 /* Build configuration list for PBXNativeTarget "Jukko Production" */;
+			buildPhases = (
+				3102216DD9AA566953C77FF6 /* [CP] Check Pods Manifest.lock */,
+				5DC813AE20AC6F5C00986603 /* Sources */,
+				5DC813B120AC6F5C00986603 /* Resources */,
+				5DC813B520AC6F5C00986603 /* Frameworks */,
+				899EF314E13EB3CE6B1CEF4E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DC813C120AC723800986603 /* PBXTargetDependency */,
+			);
+			name = "Jukko Production";
+			productName = "Jukko-Sample";
+			productReference = 5DC813BC20AC6F5C00986603 /* Jukko Production.app */;
+			productType = "com.apple.product-type.application";
+		};
+		846188271E5C338F002C0B81 /* Jukko-SampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8461883F1E5C338F002C0B81 /* Build configuration list for PBXNativeTarget "Jukko-SampleTests" */;
+			buildPhases = (
+				846188241E5C338F002C0B81 /* Sources */,
+				846188251E5C338F002C0B81 /* Frameworks */,
+				846188261E5C338F002C0B81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jukko-SampleTests";
+			productName = "Jukko-SampleTests";
+			productReference = 846188281E5C338F002C0B81 /* Jukko-SampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		846188321E5C338F002C0B81 /* Jukko-SampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 846188421E5C338F002C0B81 /* Build configuration list for PBXNativeTarget "Jukko-SampleUITests" */;
+			buildPhases = (
+				8461882F1E5C338F002C0B81 /* Sources */,
+				846188301E5C338F002C0B81 /* Frameworks */,
+				846188311E5C338F002C0B81 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jukko-SampleUITests";
+			productName = "Jukko-SampleUITests";
+			productReference = 846188331E5C338F002C0B81 /* Jukko-SampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8461880C1E5C338F002C0B81 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Jukko;
+				TargetAttributes = {
+					5DC813A920AC6F5C00986603 = {
+						DevelopmentTeam = 8828743K7E;
+						LastSwiftMigration = 1010;
+					};
+					846188271E5C338F002C0B81 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8828743K7E;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 846188131E5C338F002C0B81;
+					};
+					846188321E5C338F002C0B81 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8828743K7E;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 846188131E5C338F002C0B81;
+					};
+				};
+			};
+			buildConfigurationList = 8461880F1E5C338F002C0B81 /* Build configuration list for PBXProject "Jukko-Sample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8461880B1E5C338F002C0B81;
+			productRefGroup = 846188151E5C338F002C0B81 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 842083501E8E731300F6B651 /* Products */;
+					ProjectRef = 8420834F1E8E731300F6B651 /* jukko-ios-sdk.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				5DC813A920AC6F5C00986603 /* Jukko Production */,
+				846188271E5C338F002C0B81 /* Jukko-SampleTests */,
+				846188321E5C338F002C0B81 /* Jukko-SampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		842083571E8E731300F6B651 /* JukkoSdk.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JukkoSdk.framework;
+			remoteRef = 842083561E8E731300F6B651 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8420835B1E8E731300F6B651 /* JukkoSdk.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JukkoSdk.framework;
+			remoteRef = 8420835A1E8E731300F6B651 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		8420835D1E8E731300F6B651 /* jukko-ios-sdkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "jukko-ios-sdkTests.xctest";
+			remoteRef = 8420835C1E8E731300F6B651 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		849869511EA9046F0073137B /* JukkoSdk.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = JukkoSdk.framework;
+			remoteRef = 849869501EA9046F0073137B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DC813B120AC6F5C00986603 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DC813B220AC6F5C00986603 /* LaunchScreen.storyboard in Resources */,
+				5D3721CE20B2C9780041BB34 /* Localization.strings in Resources */,
+				5DC813B320AC6F5C00986603 /* Assets.xcassets in Resources */,
+				5DC813B420AC6F5C00986603 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		846188261E5C338F002C0B81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		846188311E5C338F002C0B81 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3102216DD9AA566953C77FF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jukko Production-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		899EF314E13EB3CE6B1CEF4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Jukko Production/Pods-Jukko Production-frameworks.sh",
+				"${PODS_ROOT}/JukkoSdk/JukkoSdk.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JukkoSdk.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Jukko Production/Pods-Jukko Production-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DC813AE20AC6F5C00986603 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D3721E220B2DA9F0041BB34 /* AppError.swift in Sources */,
+				5D3721E620B2DB040041BB34 /* DescriptionProtocol.swift in Sources */,
+				5D37220520B2E3F40041BB34 /* EnabilityState.swift in Sources */,
+				5D8734B4225B7B26004C3D3A /* CustomerInfoScreen.swift in Sources */,
+				5D131339225C9B2E007A6B2D /* UIView+Extensions.swift in Sources */,
+				5D37220120B2DDD60041BB34 /* MainsScreenRouter.swift in Sources */,
+				5D37220E20B2F4870041BB34 /* MainScreenViewController.swift in Sources */,
+				5D3721D820B2CB680041BB34 /* String+Extensions.swift in Sources */,
+				5D8734BE225B7B46004C3D3A /* CustomerInfoScreenPresenter.swift in Sources */,
+				5D873516225C8E34004C3D3A /* UIButton+Extensions.swift in Sources */,
+				5D6D227B20D3B14B0035C2AA /* WindowTestModule.swift in Sources */,
+				5D37222520B30E1A0041BB34 /* AlertTestViewController.swift in Sources */,
+				5D3721D320B2C9A70041BB34 /* Message.swift in Sources */,
+				5D37221C20B309B50041BB34 /* AlertTestProtocols.swift in Sources */,
+				5D37221F20B30CEE0041BB34 /* AlertTestPresenter.swift in Sources */,
+				5D37221220B2F6070041BB34 /* PlainTestRouter.swift in Sources */,
+				5D3721F720B2DCD00041BB34 /* PlainTestModuleProtocols.swift in Sources */,
+				5D13133D225C9CDE007A6B2D /* Array+Extensions.swift in Sources */,
+				5D8734B9225B7B35004C3D3A /* CustomerInfoScreenViewController.swift in Sources */,
+				5D37221620B2F60F0041BB34 /* PlainTestViewController.swift in Sources */,
+				5D3721EF20B2DB750041BB34 /* BaseViewController.swift in Sources */,
+				5D131334225C98D9007A6B2D /* UIColor+Palette.swift in Sources */,
+				5D6D227F20D3B1560035C2AA /* WindowTestPresenter.swift in Sources */,
+				5D37220620B2E4EB0041BB34 /* MainScreenPresenter.swift in Sources */,
+				5D6D227D20D3B1520035C2AA /* WindowTestViewController.swift in Sources */,
+				5D37221820B2F6680041BB34 /* PlainTestModule.swift in Sources */,
+				5D37221020B2F48A0041BB34 /* MainScreenModule.swift in Sources */,
+				5D37221420B2F60B0041BB34 /* PlainTestPresenter.swift in Sources */,
+				5D8734E0225B800F004C3D3A /* CustomerInfoScreenRouter.swift in Sources */,
+				5D6D228120D3B15A0035C2AA /* WindowTestRouter.swift in Sources */,
+				5D37222320B30E130041BB34 /* AlertTestModule.swift in Sources */,
+				5D37222120B30E0E0041BB34 /* AlertTestRouter.swift in Sources */,
+				5D6D227920D3B0D70035C2AA /* BaseConsts.swift in Sources */,
+				5D3721EA20B2DB130041BB34 /* UIStoryboard+Extensions.swift in Sources */,
+				5D37222920B313E60041BB34 /* WindowTestModuleProtocols.swift in Sources */,
+				5D8734F3225B8FF0004C3D3A /* ProgressView.swift in Sources */,
+				5D6D227520D3B0B50035C2AA /* ProductionConsts.swift in Sources */,
+				5DC813B020AC6F5C00986603 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		846188241E5C338F002C0B81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D8734BF225B7B46004C3D3A /* CustomerInfoScreenPresenter.swift in Sources */,
+				8461882D1E5C338F002C0B81 /* Jukko_SampleTests.swift in Sources */,
+				5D8734BA225B7B35004C3D3A /* CustomerInfoScreenViewController.swift in Sources */,
+				5D8734B5225B7B26004C3D3A /* CustomerInfoScreen.swift in Sources */,
+				5D8734E1225B800F004C3D3A /* CustomerInfoScreenRouter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8461882F1E5C338F002C0B81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846188381E5C338F002C0B81 /* Jukko_SampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DC813C120AC723800986603 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "jukko-production";
+			targetProxy = 5DC813C020AC723800986603 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8461881B1E5C338F002C0B81 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8461881C1E5C338F002C0B81 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		846188201E5C338F002C0B81 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				846188211E5C338F002C0B81 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DC813BA20AC6F5C00986603 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3491CD544688C954A75C4E75 /* Pods-Jukko Production.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8828743K7E;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Jukko Sample Production Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1.4;
+				OTHER_SWIFT_FLAGS = "-D Production";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jukko.production;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5DC813BB20AC6F5C00986603 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A06CEEC306FF2D2BF0C7461B /* Pods-Jukko Production.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8828743K7E;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Jukko Sample Production Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1.4;
+				OTHER_SWIFT_FLAGS = "-D Production";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jukko.production;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		8461883A1E5C338F002C0B81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Jukko Test App";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8461883B1E5C338F002C0B81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "Jukko Test App";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		846188401E5C338F002C0B81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8828743K7E;
+				INFOPLIST_FILE = "Jukko-SampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jukko.Jukko-SampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jukko-Sample.app/Jukko-Sample";
+			};
+			name = Debug;
+		};
+		846188411E5C338F002C0B81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8828743K7E;
+				INFOPLIST_FILE = "Jukko-SampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jukko.Jukko-SampleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jukko-Sample.app/Jukko-Sample";
+			};
+			name = Release;
+		};
+		846188431E5C338F002C0B81 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8828743K7E;
+				INFOPLIST_FILE = "Jukko-SampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jukko.Jukko-SampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Jukko-Sample";
+			};
+			name = Debug;
+		};
+		846188441E5C338F002C0B81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8828743K7E;
+				INFOPLIST_FILE = "Jukko-SampleUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Jukko.Jukko-SampleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Jukko-Sample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DC813B920AC6F5C00986603 /* Build configuration list for PBXNativeTarget "Jukko Production" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DC813BA20AC6F5C00986603 /* Debug */,
+				5DC813BB20AC6F5C00986603 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8461880F1E5C338F002C0B81 /* Build configuration list for PBXProject "Jukko-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8461883A1E5C338F002C0B81 /* Debug */,
+				8461883B1E5C338F002C0B81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8461883F1E5C338F002C0B81 /* Build configuration list for PBXNativeTarget "Jukko-SampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846188401E5C338F002C0B81 /* Debug */,
+				846188411E5C338F002C0B81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		846188421E5C338F002C0B81 /* Build configuration list for PBXNativeTarget "Jukko-SampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846188431E5C338F002C0B81 /* Debug */,
+				846188441E5C338F002C0B81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8461880C1E5C338F002C0B81 /* Project object */;
+}

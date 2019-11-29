@@ -1,0 +1,14 @@
+/* 
+  Localization.strings
+  Jukko-Sample
+
+  Created by Anastasia Tarasova on 21/05/2018.
+  Copyright © 2018 Jukko. All rights reserved.
+*/
+
+"Ok" = "Ok";
+"Jukko SDK State" = "Jukko SDK State";
+"Jukko SDK is not initialized. Please return to main menu and try to reinitialize SDK." = "Jukko SDK is not initialized. Please return to main menu and try to reinitialize SDK.";
+"Enabled" = "Enabled";
+"Disabled" = "Disabled";
+"Jukko SDK is already initialized." = "Jukko SDK is already initialized.";
